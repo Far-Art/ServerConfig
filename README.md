@@ -1,0 +1,2 @@
+# ServerConfig
+Server configuration
