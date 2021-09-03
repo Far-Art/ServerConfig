@@ -14,7 +14,7 @@ spring:
         - name: Hystrix
           args:
             name: monitor-srvA
-            fallbackUri: forward:/fallback/serviceA
+            fallbackUri: forward:/fallback/service/a
       - id: ServiceB
         uri: lb://service-B
         predicates:
@@ -24,7 +24,7 @@ spring:
         - name: Hystrix
           args:
             name: monitor-srvB
-            fallbackUri: forward:/fallback/serviceB  
+            fallbackUri: forward:/fallback/service/b
     consul:
       discovery:
         instanceId: Gateway
